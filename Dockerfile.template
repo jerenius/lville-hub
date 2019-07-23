@@ -42,6 +42,7 @@ RUN apt-get update \
 RUN pip3 install --upgrade --no-cache-dir setuptools \
  && pip3 install --no-cache-dir \
  adafruit-bmp \
- paho-mqtt
-
+ paho-mqtt \
+ adafruit-circuitpython-servokit
+ 
 CMD ["bash", "/opt/start.sh"]
